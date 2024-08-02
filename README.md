@@ -9,7 +9,6 @@ This project aims to detect fraudulent online transactions using anomaly detecti
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
