@@ -30,7 +30,7 @@ git clone https://github.com/yourusername/fraud-detection.git
 cd fraud-detection
 pip install -r requirements.txt
 ```
-#Usage
+# Usage
 1. Preprocess the dataset to handle missing values and perform feature scaling.
 2. Apply oversampling and undersampling techniques to balance the dataset.
 3. Train anomaly detection algorithms on the balanced dataset.
@@ -61,5 +61,5 @@ model.fit(X_train, Y_train)
 Y_pred = model.predict(X_test)
 print(classification_report(Y_test, Y_pred))
 ```
-#Contributing
+# Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
