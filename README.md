@@ -29,3 +29,37 @@ To get started with this project, clone the repository and install the required 
 git clone https://github.com/yourusername/fraud-detection.git
 cd fraud-detection
 pip install -r requirements.txt
+```
+#Usage
+1. Preprocess the dataset to handle missing values and perform feature scaling.
+2. Apply oversampling and undersampling techniques to balance the dataset.
+3. Train anomaly detection algorithms on the balanced dataset.
+4. Evaluate the model's performance using appropriate metrics.
+   
+Example usage:
+```python
+from imblearn.over_sampling import SMOTE
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import IsolationForest
+from sklearn.metrics import classification_report
+
+# Load and preprocess the data
+# X, Y should be your features and target variable
+
+# Apply SMOTE to balance the dataset
+smote = SMOTE()
+X_resample, Y_resample = smote.fit_resample(X, Y)
+
+# Split the dataset
+X_train, X_test, Y_train, Y_test = train_test_split(X_resample, Y_resample, test_size=0.2, random_state=42)
+
+# Train the model
+model = IsolationForest()
+model.fit(X_train, Y_train)
+
+# Predict and evaluate
+Y_pred = model.predict(X_test)
+print(classification_report(Y_test, Y_pred))
+```
+#Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
