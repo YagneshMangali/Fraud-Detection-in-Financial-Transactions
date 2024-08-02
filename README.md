@@ -6,7 +6,6 @@ This project aims to detect fraudulent online transactions using anomaly detecti
 
 - [Overview](#overview)
 - [Techniques Used](#techniques-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
@@ -20,15 +19,6 @@ Fraud detection in online transactions is a critical task due to the potential f
 2. **Undersampling**: Reducing the number of samples in the majority class (non-fraudulent transactions) to balance the dataset.
 3. **Anomaly Detection Algorithms**: Applying algorithms that are robust to imbalanced datasets for detecting fraud.
 
-## Installation
-
-To get started with this project, clone the repository and install the required dependencies.
-
-```bash
-git clone https://github.com/yourusername/fraud-detection.git
-cd fraud-detection
-pip install -r requirements.txt
-```
 # Usage
 1. Preprocess the dataset to handle missing values and perform feature scaling.
 2. Apply oversampling and undersampling techniques to balance the dataset.
