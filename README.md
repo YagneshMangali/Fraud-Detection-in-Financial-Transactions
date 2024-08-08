@@ -1,5 +1,4 @@
 # Fraud Detection in Online Transactions
-
 This project aims to detect fraudulent online transactions using anomaly detection techniques. Given the extremely low ratio of fraudulent transactions (less than 0.00005), traditional classification algorithms are prone to overfitting. To address this, we employ oversampling and undersampling methods to balance the dataset.
 
 ## Table of Contents
